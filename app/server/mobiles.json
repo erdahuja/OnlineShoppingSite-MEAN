@@ -1,0 +1,32 @@
+[{
+        "name": "htc",
+        "price": 10000,
+        "Description": "good",
+        "image": "images/mobiles/m1.jpeg",
+        "quantity": 2
+
+
+
+},
+    {
+        "name": "moto",
+        "price": 8000,
+        "Description": "v good",
+        "image": "images/mobiles/m2.jpeg",
+        "quantity": 2
+
+
+
+},
+    {
+        "name": "lenovo",
+        "price": 5000,
+        "Description": "v good",
+        "image": "images/mobiles/m3.jpeg",
+        "quantity": 2
+
+    }
+
+
+
+        ]

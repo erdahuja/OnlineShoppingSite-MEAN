@@ -8,7 +8,9 @@
  * Controller of the onlineShoppingApp
  */
 angular.module('onlineShoppingApp')
-    .controller('MobileCtrl', function (mobilefactory) {
+    .controller('MobileCtrl', function (mobilefactory, $scope, $rootScope) {
+
+        var promise = mobilefactory.callserver();
 
         promise.then(function (data) {
             $scope.result = data;
@@ -17,4 +19,11 @@ angular.module('onlineShoppingApp')
             $scope.result = error;
         });
 
+        var total = 0;
+        $scope.totalPrice = function (price) {
+
+            total += price;
+            console.log("Total ", total);
+            $rootScope.totalPrice = total;
+        }
     });
